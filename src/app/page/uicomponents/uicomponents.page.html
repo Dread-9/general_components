@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>UI Components</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Descripción general con diseño moderno -->
+  <ion-text>
+    <p class="intro-text">En esta página encontrarás una serie de componentes de la interfaz de usuario de Ionic, con una breve descripción de cada uno. Haz clic en cualquier componente para obtener más detalles.</p>
+  </ion-text>
+  
+  <!-- Grid de tarjetas con un estilo más moderno -->
+  <ion-grid class="ui-components-grid">
+    <ion-row>
+      <ion-col size="12" size-md="4" *ngFor="let component of appPages">
+        <ion-card [routerLink]="['/component', component.url]" routerDirection="root" class="custom-card">
+          <div class="icon-circle">
+            <ion-icon [src]="component.img" size="large"></ion-icon>
+          </div>
+          <!-- <img [src]="component.img" alt="{{ component.title }}" class="card-img"> -->
+          <ion-card-header class="card-header">
+            <ion-card-title class="card-title">{{ component.title }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="card-content">
+            <p>{{ component.description }}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

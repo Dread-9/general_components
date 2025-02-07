@@ -1,0 +1,72 @@
+/* Estilo para la descripción general */
+.intro-text {
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px 0;
+    color: #555;
+}
+
+/* Estilos para el grid de componentes */
+.ui-components-grid {
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+/* Estilo personalizado para las tarjetas */
+.custom-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect para las tarjetas */
+.custom-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el contenedor del ícono circular */
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #007bff;  /* Puedes cambiar el color de fondo aquí */
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+/* Estilos para el icono dentro del círculo */
+ion-icon {
+    color: white;  /* Cambia el color del icono */
+}
+
+/* Estilos para el encabezado de la tarjeta */
+.card-header {
+    background-color: #f4f4f4;
+    border-radius: 0 0 12px 12px;
+    padding: 10px;
+}
+
+/* Estilo para el título de la tarjeta */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Estilos para el contenido de la tarjeta */
+.card-content {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Agregar un poco de espacio entre las tarjetas */
+ion-col {
+    margin-bottom: 20px;
+}
